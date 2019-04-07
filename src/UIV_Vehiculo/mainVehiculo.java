@@ -1,5 +1,3 @@
-
-
 //DEFINICION DE CLASE EJECUTABLE VEHICULO
 //MARTINEZ ESTRADA JOSHUA
 //18111962
@@ -10,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class mainVehiculo {
+    
+    //FUNCION QUE MUESTRA MENU PRINCIPAL EN PANTALLA
     private static void menu(){
         System.out.print("SISTEMA DE GESTION VEHICULOS [RENTA]\n"
                 + "1. Añadir Vehiculo\n"
@@ -23,6 +23,7 @@ public class mainVehiculo {
                 + "OPCION: ");
     }
     
+    //FUNCION PRINCIPAL
     public static void main(String[] args) {
         Scanner in=new Scanner (System.in);
         ArrayList<Vehiculo> vehiculos=new ArrayList<>();
@@ -125,6 +126,7 @@ public class mainVehiculo {
         }
     }
     
+    //FUNCION QUE GENERA MATRICULA UNICA
     private static String generarMatricula(ArrayList<Vehiculo> vehiculos){
         String[] letras=new String[]{"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
             "P","Q","R","S","T","U","V","W","X","Y","Z"};
